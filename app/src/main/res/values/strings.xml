@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MRG TO-DO</string>
+    <string name="todoList">To-Do List</string>
+    <string name="search">search</string>
+    <string name="task_name">Task</string>
+    <string name="new_name">New Task</string>
+    <string name="add_task">Add New Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="comfirmation">Are you sure to delete all?!</string>
+    <string name="yes">Yes</string>
+    <string name="no">Cancel</string>
+</resources>
