@@ -3,8 +3,15 @@ package ir.mrghost.todo.task;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "taskTable")
 public class Task implements Parcelable {
+
+    @PrimaryKey(autoGenerate = true)
     private long id;
+
     private String title;
     private boolean isCompleted;
 
