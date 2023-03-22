@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                style="@style/h1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:text="@string/app_name" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteAllBtn"
+                style="@style/OutlineButton"
+                app:strokeColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Delete All"
+                app:cornerRadius="24dp"
+                android:textSize="12sp"
+                app:icon="@drawable/ic_delete_24dp"
+                app:iconSize="18dp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <EditText
+                android:id="@+id/searchEt"
+                style="@style/p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_edit_text"
+                android:drawableStart="@drawable/ic_search_gray_24dp"
+                android:drawablePadding="8dp"
+                android:hint="Search tasks..."
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:paddingStart="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:textColor="@color/textColorOnSurface"
+                android:textColorHint="@color/textColorOnSurface" />
+
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3.5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_underline" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskListRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="12dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            style="@style/p"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Try adding some tasks to see them here" />
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addNewTaskBtn"
+        style="@style/PrimaryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:elevation="4dp"
+        android:layout_margin="12dp"
+        android:minHeight="65dp"
+        app:cornerRadius="32dp"
+        android:text="Add New Task"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_add_24dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
