@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.room.util.StringUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -115,12 +116,9 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
             }
 
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    eventListener.onLongClick(task);
-                    return false;
-                }
+            itemView.setOnLongClickListener(v -> {
+                eventListener.onLongClick(task);
+                return false;
             });
 
             itemView.setOnClickListener(new View.OnClickListener() {

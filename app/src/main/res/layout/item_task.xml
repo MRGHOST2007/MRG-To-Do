@@ -30,9 +30,11 @@
         android:layout_marginEnd="24dp"
         android:paddingTop="24dp"
         android:paddingBottom="24dp"
-        android:text="Task Title"
+        tools:text="Task Title"
         android:textColor="@color/white"
         android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkBoxIv"
         app:layout_constraintTop_toTopOf="parent" />

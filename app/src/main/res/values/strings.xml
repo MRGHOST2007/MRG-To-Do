@@ -11,4 +11,13 @@
     <string name="comfirmation">Are you sure to delete all?!</string>
     <string name="yes">Yes</string>
     <string name="no">Cancel</string>
+    <string name="deleteAll">Delete All</string>
+    <string name="addTask">Add New Task</string>
+    <string name="emptyStateText">Try adding some tasks to see them here</string>
+    <string name="searchTasks">Search tasks...</string>
+    <string name="high">High</string>
+    <string name="normal">Normal</string>
+    <string name="low">Low</string>
+    <string name="addTaskEdit">Add a task...</string>
+    <string name="saveChanges">Save Changes</string>
 </resources>

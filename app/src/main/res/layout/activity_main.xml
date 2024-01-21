@@ -20,7 +20,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="16dp"
                 android:text="@string/app_name" />
 
             <com.google.android.material.button.MaterialButton
@@ -32,7 +32,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:text="Delete All"
+                android:layout_marginEnd="16dp"
+                android:text="@string/deleteAll"
                 app:cornerRadius="24dp"
                 android:textSize="12sp"
                 app:icon="@drawable/ic_delete_24dp"
@@ -54,10 +55,11 @@
                 android:background="@drawable/background_edit_text"
                 android:drawableStart="@drawable/ic_search_gray_24dp"
                 android:drawablePadding="8dp"
-                android:hint="Search tasks..."
+                android:hint="@string/searchTasks"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
                 android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
                 android:textColor="@color/textColorOnSurface"
@@ -109,7 +111,7 @@
             style="@style/p"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:text="Try adding some tasks to see them here" />
+            android:text="@string/emptyStateText" />
     </LinearLayout>
 
 
@@ -123,7 +125,7 @@
         android:layout_margin="12dp"
         android:minHeight="65dp"
         app:cornerRadius="32dp"
-        android:text="Add New Task"
+        android:text="@string/addTask"
         android:textAllCaps="false"
         app:icon="@drawable/ic_add_24dp" />
 

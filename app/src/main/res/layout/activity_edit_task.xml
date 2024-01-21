@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
-                    android:text="High" />
+                    android:text="@string/high" />
 
                 <ImageView
                     android:id="@+id/highImportanceCheckIv"
@@ -109,7 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
-                    android:text="Normal" />
+                    android:text="@string/normal" />
 
                 <ImageView
                     android:id="@+id/normalImportanceCheckIv"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginEnd="8dp"
-                    android:text="Low" />
+                    android:text="@string/low" />
 
                 <ImageView
                     android:id="@+id/lowImportanceCheckIv"
@@ -158,7 +158,7 @@
             android:layout_marginEnd="12dp"
             android:background="@null"
             android:gravity="top|start"
-            android:hint="Add a task..."
+            android:hint="@string/addTaskEdit"
             android:textColor="@color/textColorOnSurface"
             android:textColorHint="@color/textColorOnSurface"
             android:textSize="18sp" />
@@ -173,7 +173,7 @@
         android:layout_margin="12dp"
         android:minHeight="65dp"
         app:cornerRadius="32dp"
-        android:text="Save Changes"
+        android:text="@string/saveChanges"
         android:textAllCaps="false"
         app:icon="@drawable/ic_circle_done_white_24dp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
